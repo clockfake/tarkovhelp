@@ -148,11 +148,11 @@
 }
 
 .rules__reward-details::before {
-  content: '+';
+  content: '+ ';
 }
 
 details[open] > .rules__reward-details::before {
-  content: '-';
+  content: '- ';
 }
 
 .rules__reward-details::-webkit-details-marker {
