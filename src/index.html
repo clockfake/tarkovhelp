@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Турнир Tarkov.Help</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="modal__cover modal__cover_closed" id="modal-cover">
+    <div class="modal">
+      <button id="close-modal" class="modal__close" type="button">✕</button>
+      <h2 class="modal__heading">Запись на турнир</h2>
+      <form class="modal__form">
+        <label class="modal__form-item">
+          <span class="modal__label">Почта:</span>
+          <input class="modal__input" type="email" name="email" placeholder="tarkov@help.com" required />
+        </label>
+        <label class="modal__form-item">
+          <span class="modal__label">Ник на Twitch:</span>
+          <input class="modal__input" type="text" name="twitch" placeholder="dunduk" required />
+        </label>
+        <label class="modal__form-item">
+          <textarea class="modal__input modal__textarea" placeholder="Комментарий"></textarea>
+        </label>
+        <button class="button modal__submit" type="submit">
+          Подать заявку
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="main-page">
+    <section class="heading">
+      <div>
+        <ol class="heading__breadcrumbs">
+          <li class="heading__breadcrumbs-item">
+            Одиночные квалификации на турнир
+          </li>
+        </ol>
+        <h1 class="heading__h1">Турнир Tarkov.Help</h1>
+        <h2 class="heading__h2">Охота на новичков<br />Одиночки</h2>
+
+        <button class="button heading__sign-up" id="registration-sign-up" type="button">
+          Записаться на турнир
+        </button>
+      </div>
+      <div class="heading__image-wrapper">
+        <div class="heading__image" />
+      </div>
+    </section>
+    <section class="rules">
+      <article class="rules__states">
+        <h3 class="rules__heading">Правила проведения турнира</h3>
+
+        <div class="rules__state">
+          <b class="rules__state-heading">Цель участников турнира:</b>
+          <p class="rules__state-text">
+            Игроки за&nbsp;3&nbsp;часа игры на&nbsp;локации Таможня, должны как можно больше раз выжить в&nbsp;рейдах
+            и&nbsp;уничтожить как можно больше игроков на&nbsp;карте за&nbsp;один рейд. Турнир основан на&nbsp;PVP
+            механике и&nbsp;удаче в&nbsp;нахождении игроков низкого уровня персонажа.
+          </p>
+        </div>
+
+        <div class="rules__state">
+          <b class="rules__state-heading">Снаряжение:</b>
+          <p class="rules__state-text">
+            Любое снаряжение на любую сумму денег с основного аккаунта игрока.
+          </p>
+        </div>
+
+        <div class="rules__state">
+          <b class="rules__state-heading">Получение очков:</b>
+          <div class="rules__state-text">
+            Убийства ЧВК с жетоном за один рейд:
+            <ul>
+              <li class="rules__score">
+                <span class="rules__score-condition">1 убийство с жетоном</span>
+                - <span class="rules__score-amount">1 очко</span>
+              </li>
+              <li class="rules__score">
+                <span class="rules__score-condition">2 убийства с жетоном</span>
+                - <span class="rules__score-amount">4 очка</span>
+              </li>
+              <li class="rules__score">
+                <span class="rules__score-condition">3 убийства с жетоном</span>
+                - <span class="rules__score-amount">8 очков</span>
+              </li>
+              <li class="rules__score">
+                <span class="rules__score-condition">4 убийства с жетоном</span>
+                - <span class="rules__score-amount">16 очков</span>
+              </li>
+              <li class="rules__score">
+                <span class="rules__score-condition">5+ убийств с жетоном</span>
+                -
+                <span class="rules__score-amount">за каждого ЧВК по 5 очков</span>
+              </li>
+              <li class="rules__score">
+                <span class="rules__score-condition">Extra: убийтсво оружием ближнего боя</span>
+                -
+                <span class="rules__score-amount">20 очков</span>
+              </li>
+            </ul>
+            <div>
+              <i class="rules__note">*(Если уровень убитого ЧВК не&nbsp;превышает или равен&nbsp;20,
+                то&nbsp;дополнительно дается 4&nbsp;очка за&nbsp;каждого)</i>
+              <i class="rules__note">*(Учитываются очки только в&nbsp;рейдах, где участник выжил в&nbsp;рейде,
+                обязательно нужно собирать жетоны, иначе очки за&nbsp;убийство не&nbsp;будут засчитаны)</i>
+            </div>
+          </div>
+        </div>
+
+        <div class="rules__state">
+          <b class="rules__state-heading">Правила подачи заявки:</b>
+          <div class="rules__state-text">
+            Заявка должна включать в себя:
+            <ul>
+              <li>
+                - двухчасовой стрим на платформе Twitch с названием:
+                <span class="rules__score-condition">Tarkov Help заявка</span>
+              </li>
+              <li>- ссылка на запись двухчасового стрима</li>
+              <li>
+                - с&nbsp;самого начала стрима нужно показать статистику вашего персонажа по&nbsp;убийствам чвк, после
+                уже начинать рейды на&nbsp;локации Таможня
+              </li>
+              <li>
+                - всегда показывать список убийств в конце рейда, не скрывать
+                экран чем-либо
+              </li>
+              <li>
+                - по окончанию двух часов показать статистику персонажа по
+                убийством чвк
+              </li>
+              <li>- количество участников в турнире: 10 человек</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rules__state">
+          <b class="rules__state-heading">Минимальные требования к участнику:</b>
+          <div class="rules__state-text">
+            <ul>
+              <li>- аккаунт на твиче, не важно партнер или нет</li>
+              <li>- 18 лет или более</li>
+              <li>- качество стрима для заявки 720p и выше</li>
+              <li>- умение говорить хорошо на русском языке</li>
+              <li>- не нарушать правила платформы Twitch</li>
+              <li>- жить в регионах России</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="rules__format">
+        <div class="rules__dates">
+          <b class="rules__dates-heading">Время проведения турнира</b>
+          <p>
+            Прием заявок: 12-20 апреля
+            <br />
+            Проведение турнира: 23 апреля
+          </p>
+        </div>
+
+        <div class="rules__map">
+          <b class="rules__state-heading rules__map-heading">Локация:</b>
+          <span class="rules__map-name">Таможня</span>
+        </div>
+
+        <button class="button rules__sign-up" id="rules-sign-up" type="button">
+          Записаться на турнир
+        </button>
+      </article>
+    </section>
+
+    <section>
+      <div class="rules__state">
+        <b class="rules__state-heading">Награда победителям</b>
+        <div class="rules__state-rewards">
+          <p class="rules__state-reward">
+            <span class="rules__reward-place">1 место</span>
+            <br />
+            <span class="rules__reward-amount">25 000 ₽</span>
+          </p>
+          <p class="rules__state-reward">
+            <span class="rules__reward-place">2 место</span>
+            <br />
+            <span class="rules__reward-amount">14 000 ₽</span>
+          </p>
+          <p class="rules__state-reward">
+            <span class="rules__reward-place">3 место</span>
+            <br />
+            <span class="rules__reward-amount">8 000 ₽</span>
+          </p>
+          <p class="rules__state-reward">
+            <span class="rules__reward-place">4 место</span>
+            <br />
+            <span class="rules__reward-amount">3 000 ₽</span>
+          </p>
+        </div>
+        <details>
+          <summary class="rules__reward-details">
+            дополнительные секретные призы победителям
+          </summary>
+
+          Подписка на twitch.tv/dunduk!
+          <div class="rules__state-rewards">
+            <p class="rules__state-reward">
+              <span class="rules__reward-place">1 место</span>
+              <br />
+              <span class="rules__reward-amount">6 мес</span>
+            </p>
+            <p class="rules__state-reward">
+              <span class="rules__reward-place">2 место</span>
+              <br />
+              <span class="rules__reward-amount">4 мес</span>
+            </p>
+            <p class="rules__state-reward">
+              <span class="rules__reward-place">3 место</span>
+              <br />
+              <span class="rules__reward-amount">2 мес</span>
+            </p>
+            <p class="rules__state-reward">
+              <span class="rules__reward-place">4 место</span>
+              <br />
+              <span class="rules__reward-amount">1 мес</span>
+            </p>
+          </div>
+        </details>
+      </div>
+
+      <div class="rules__state">
+        <b class="rules__state-heading">Спонсоры турнира</b>
+        <div class="rules__sponsor">
+          <div class="rules__sponsor-image"></div>
+          <p class="rules__sponsor-name">pepich</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

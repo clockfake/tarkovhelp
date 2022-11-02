@@ -1,0 +1,198 @@
+.rules {
+  display: flex;
+  margin-top: 80px;
+}
+
+.rules__heading {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--green);
+}
+
+.rules__states {
+  margin-right: 40px;
+}
+
+.rules__state {
+  margin-top: 25px;
+}
+
+.rules__state-heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--soft-accent);
+}
+
+.rules__state-text {
+  margin-top: 10px;
+}
+
+.rules__score {
+  font-weight: 600;
+}
+
+.rules__score-condition {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.rules__score-amount {
+  color: var(--accent);
+  font-weight: inherit;
+}
+
+.rules__note {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #ababab;
+}
+
+.rules__format {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.rules__dates {
+  width: 100%;
+  padding: 15px 25px;
+  background-color: var(--dark-grey);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.rules__dates-heading {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.rules__dates-info {
+  font-weight: 600;
+  color: var(--soft-accent);
+}
+
+.rules__map {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 25px;
+  height: 194px;
+  box-sizing: border-box;
+  background-image: url('../img/map.png');
+  background-repeat: no-repeat;
+}
+
+.rules__state-heading.rules__map-heading {
+  margin-bottom: 0;
+}
+
+.rules__map-name {
+  font-weight: 700;
+}
+
+.rules__sign-up {
+  margin-top: 25px;
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+
+.button.rules__sign-up:hover {
+  color: var(--green-active);
+  border-color: var(--green-active);
+  background-color: transparent;
+}
+
+.rules__state-rewards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.rules__state-reward {
+  width: 225px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: var(--dark-grey);
+  border-radius: 5px;
+}
+
+.rules__reward-place {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.rules__reward-amount {
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.rules__reward-details {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  background-color: var(--dark-grey);
+  cursor: pointer;
+  list-style: none;
+}
+
+.rules__reward-details::before {
+  content: '+';
+}
+
+details[open] > .rules__reward-details::before {
+  content: '-';
+}
+
+.rules__reward-details::-webkit-details-marker {
+  display: none;
+}
+
+.rules__sponsor {
+  width: 225px;
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-grey);
+  border-radius: 5px;
+}
+
+.rules__sponsor-image {
+  width: 58px;
+  height: 58px;
+  margin-right: 15px;
+  background-image: url('../img/peppa.png');
+  border-radius: 50%;
+}
+
+.rules__sponsor-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+@media (max-width: 900px) {
+  .rules {
+    flex-direction: column;
+  }
+
+  .rules__states {
+    margin-right: 0;
+  }
+
+  .rules__format {
+    margin-top: 20px;
+  }
+}
